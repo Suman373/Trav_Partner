@@ -1,0 +1,199 @@
+/* RESET */
+/* Suman Roy Github:Suman373 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Raleway:wght@300&display=swap');
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg-color:lightblue;
+    --title-h:#fffc36;
+    --text-shadow:black;
+    --title-des:#46009e;
+    --form-bg-color:rgba(10, 10, 10, 0.397);
+    --label-color:white;
+    --signup-button:#46009e;
+    --toggle-color:#fffc36;
+    --subhead:'Lusitana',serif;
+    --head:'Raleway', sans-serif;
+
+}
+html{
+    position: relative;
+}
+
+body{
+    line-height: 1.5;
+}
+body::before{
+    content:'';
+    top:0;
+    left:0;
+    position: absolute;
+    background:url('./bg.avif') no-repeat center center/cover;
+    height:110%;
+    width:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+
+.container{
+    width:100%;
+    margin:3rem auto;
+}
+
+
+@media (max-width:576px){
+    .container{
+        max-width:300px;
+    }
+    .header h1{
+        font-size: 2.5rem;
+    }
+}
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+    .header h1{
+        font-size:3rem;
+    }
+    .header p{
+        font-size:1.4rem;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+
+
+.header{
+    padding:0 0.5rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    color:var(--title-h);
+    line-height:1.2;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
+    color:var(--title-des);
+    font-family: var(--subhead);
+}
+
+.header h1{
+    margin-top:0;
+    margin-bottom:0.54rem;
+    text-shadow: 0 1px 4px var(--text-shadow);
+}
+
+#description{
+    font-style: italic;
+    font-weight: 400;
+    text-shadow:1px 1px 1px var(--text-shadow);
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size:1.4rem;
+    margin:0.2rem auto;
+    color:var(--label-color);
+    font-family:var(--subhead);
+}
+form{
+    background: var(--form-bg-color);
+    padding:2rem;
+    border-radius: 0.5rem;
+    margin:2rem auto;
+}
+.form-group{
+    display:block;
+    margin-left:25%;
+    opacity:1;
+}
+input{
+    font-size: 1.2rem;
+    padding:4px;
+    background: transparent;
+    outline:none;
+    border:none;
+    border-bottom: 2px solid var(--signup-button);
+}
+input::placeholder{
+    color:wheat;
+    font-weight: 300;
+    opacity: 0.5;
+    font-family:Arial, Helvetica, sans-serif;
+}
+input:hover,input:focus{
+    color:var(--toggle-color);
+    outline:none;
+}
+
+.btn{
+    font-size: 1.2rem;
+    display: block;
+    margin:1rem auto;
+    background: var(--signup-button);
+    border:none;
+    color:white;
+    height: 2rem;
+    width:10rem;
+    font-family: var(--head);
+    cursor:pointer;
+}
+
+.already-member{
+    color:white;
+    margin:5px auto;
+}
+.login{
+    text-decoration: none;
+    color:var(--signup-button);
+    font-weight: 800;
+}
+.login:hover{
+    color:var(--toggle-color);
+}
+.btn:hover{
+    background-color:var(--signup-hover);
+    border:2px solid var(--toggle-color);
+    transform: scale(1.05);
+}
+.showPass{
+    font-size:1.2rem;
+    display: block;
+    margin:auto;
+    cursor:pointer;
+}
+.showPass:hover{
+    color:var(--toggle-color);
+}
+@media screen and (max-width:629px){
+    .form-group{
+        margin:0 auto;
+    }
+    input{
+        font-size:1rem;
+    }
+    .btn{
+        font-size:1.1rem;
+    }
+}
+
+
+
+
+

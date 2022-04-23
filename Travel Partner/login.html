@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Partner | Login</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="head-name">Travel Partner Login</h1>
+            <p id="description" class="description-name">
+                Please fill in the details to login!
+            </p>
+        </header>
+        <form action="main-page.html" id="login-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" class="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email: </label>
+                <input type="email" id="email" class="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password" id="contact-label">Password:<span class="showPass" id="showPass">Show</span>
+                </label>
+                <input type="password" id="password" class="password" required>
+            </div>
+            <div>
+                <button type="submit" class="btn" id="btn_submitL">Login</button>
+            </div>
+        </form>
+        <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Partner | Sign Up</title>
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="head-name">Travel Partner Signup</h1>
+            <p id="description" class="description-name">
+                Please fill in the details to sign up!
+            </p>
+        </header>
+        <form action="login.html" name="signup-form"  id="signup-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" class="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email: </label>
+                <input type="email" id="email" class="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob" id="dob-label">Date of birth:</label>
+                <input type="date" id="date" class="date" >
+            </div>
+            <div class="form-group">
+                <label for="contact" id="contact-label">Contact No.:</label>
+                <input type="number" id="contact" class="contact">
+            </div>
+            <div class="form-group">
+                <label for="password" id="contact-label">Password:<span class="showPass" id="showPass">Show</span> </label>
+                <input type="password" id="password" class="password" required>
+            </div>
+            <div>
+                <button type="submit" class="btn"  id="btn_submitS">Sign up</button>
+            </div>
+            <div class="form-group">
+                <p class="already-member">Already a member? <a href="login.html" id="login "class="login">Log in</a></p>
+            </div>
+            </form>
+    </div>
+ <script src="./singup.js"></script>
+</body>
+
+</html>
