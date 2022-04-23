@@ -1,0 +1,121 @@
+/* RESET */
+/* Suman Roy Github:Suman373 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Raleway:wght@300&display=swap');
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:lightblue;
+    --title-h:#fffc36;
+    --text-shadow:black;
+    --title-des:#46009e;
+    --join-button:#46009e;
+    --toggle-color:#fffc36;
+    --subhead:'Lusitana',serif;
+    --head:'Raleway', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-color);
+    width:100vw;
+    position: relative;
+}
+
+.header h1{
+    font-size:3rem;
+    font-family: var(--head);
+    color:var(--title-h);
+    text-align: center;
+    margin-top:2rem;
+    margin-bottom:0.54rem;
+    text-shadow: 0 1px 4px var(--text-shadow);
+}
+.header p{
+    color:var(--title-des);
+    font-family: var(--subhead);
+    font-style: italic;
+    text-align: center;
+    font-size:1.4rem;
+    font-weight: 400;
+    text-shadow:1px 1px 1px var(--text-shadow);
+}
+
+
+.container{
+    height:20rem;
+    width:70%;
+    margin: 1rem auto;
+    display: flex;
+    box-shadow:3px 5px 7px rgb(53, 52, 52);
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    font-size:1.2rem;
+    line-height: 2;
+    padding:10px;
+    height: 90%;
+    width:75%;
+    color:var(--title-des);
+    margin:1rem 10px;
+    flex-wrap: wrap;
+    font-family: var(--subhead);
+}
+.btn{
+    height:2rem;
+    width:5rem;
+    font-size:1.1rem;
+    color:var(--title-h);
+    background: var(--join-button);
+    font-family:var(--subhead);
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background: transparent;
+    border:2px solid var(--toggle-color);
+    transform: scale(1.08);
+
+}
+.image{
+    position: absolute;
+    height:9rem;
+    width:9rem;
+    right:4px;
+    margin: 10px 10px 10px 0;
+    border:2px solid var(--title-des);
+    background: url('./random\ user') no-repeat center center/cover;
+    cursor: pointer;
+}
+
+@media screen and (max-width:527px){
+    .header h1{
+        font-size: 2.5rem;
+    }
+    
+    .container{
+        height: 23rem;
+        width:calc(100% - 2rem);
+        justify-content: space-between;
+    }
+    .info{
+        line-height: 2;
+    }
+    .image{
+        height:6rem;
+        width:5rem;
+    }
+}
